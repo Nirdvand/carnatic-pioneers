@@ -6,47 +6,73 @@
     <title>Shri Muttuswami Dikshitar</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #F6F6F6;
             color: #333;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'), url('https://www.transparenttextures.com/patterns/soft-leather.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: top left, bottom right;
+            background-size: 50%, 50%;
         }
         header {
-            background-color: #4CAF50;
-            padding: 15px;
+            background-color: #FFC0CB;
+            padding: 20px;
             text-align: center;
             color: white;
+            font-size: 2rem;
+            border-bottom: 2px solid #FFB6C1;
         }
         .container {
             padding: 20px;
         }
         h1, h2 {
-            color: #4CAF50;
+            color: #FF69B4;
+            font-size: 2rem;
         }
         p {
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #444;
         }
         .link-section {
-            background-color: #fff;
-            padding: 20px;
+            background-color: #FFFFFF;
+            padding: 25px;
             margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #FFB6C1;
         }
         a {
             text-decoration: none;
-            color: #4CAF50;
+            color: #FF69B4;
             font-weight: bold;
+            font-size: 1.1rem;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #333;
+            padding: 15px;
+            background-color: #FF69B4;
             color: white;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .music-doodle {
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            font-size: 3rem;
+            color: #FFB6C1;
+            transform: rotate(30deg);
+        }
+        .flower-doodle {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            font-size: 2rem;
+            color: #FF69B4;
         }
     </style>
 </head>
@@ -70,12 +96,32 @@
             <li><a href="https://en.wikipedia.org/wiki/Muthuswami_Dikshitar" target="_blank">Muttuswami Dikshitar - Wikipedia</a></li>
             <li><a href="https://www.bharatadesam.com/people/biographies/poets_composers/muthuswami_dikshitar.php" target="_blank">Muthuswami Dikshitar - Biography</a></li>
             <li><a href="https://www.medieval.org/music/world/carnatic/dikshitar.html" target="_blank">Muthuswami Dikshitar: Compositions by Raga</a></li>
-            <li><a href="https://www.acharyanet.com/muthuswami-dikshitar/" target="_blank">Muthuswami Dikshitar - Acharyanet</a></li>
             <li><a href="https://www.thanjavurparampara.com/post/2015/03/26/sri-muthuswami-dikshitar" target="_blank">Sri Muthuswami Dikshitar - Thanjavur Parampara</a></li>
         </ul>
     </section>
 </div>
 
+
+<script>
+    // Simple JavaScript to show a welcome message on page load
+    window.onload = function() {
+        alert("Welcome to the Shri Muttuswami Dikshitar website!");
+    };
+
+    // Example of a simple interactive feature: change text color on click
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            link.style.color = "#FF6347"; // Change link color to tomato on click
+        });
+    });
+</script>
+
+<!-- Music Doodle -->
+<div class="music-doodle">🎶</div>
+
+<!-- Flower Doodle -->
+<div class="flower-doodle">🌸</div>
 
 </body>
 </html>
