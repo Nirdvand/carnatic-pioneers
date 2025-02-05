@@ -21,7 +21,15 @@
             border-bottom: 2px solid #E1D7D0; /* Light contrast border */
         }
         .container {
+            display: flex;
+            flex-wrap: wrap;
             padding: 20px;
+            justify-content: space-between;
+        }
+        .info {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 55%; /* Limiting width for the text */
         }
         h1, h2 {
             color: #FF9B8D; /* Soft coral */
@@ -31,6 +39,18 @@
             line-height: 1.8;
             font-size: 1.1rem;
             color: #444;
+        }
+        .image-container {
+            flex: 1;
+            max-width: 40%;
+            text-align: center;
+            padding-left: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         .link-section {
             background-color: #FFFFFF; /* Clean white background for the links */
@@ -68,7 +88,7 @@
 </header>
 
 <div class="container">
-    <section>
+    <section class="info">
         <h2>About Shri Muttuswami Dikshitar</h2>
         <p>Shri Muttuswami Dikshitar (1775–1835) was an influential composer in the world of Carnatic music and one of the most respected figures in the classical music tradition of South India. He was born in Tiruvarur, Tamil Nadu, into a family of musicians and scholars, which gave him an early foundation in music and the arts. His father, Ramaswami Dikshitar, was a teacher of music and his uncle, Baluswami Dikshitar, was a prominent musician, so Dikshitar was exposed to music from a young age.</p>
         
@@ -85,17 +105,22 @@
         <p>Dikshitar's influence on Carnatic music remains strong even today. His compositions continue to be studied, performed, and revered by musicians and music lovers alike. His legacy is not just about the music itself but also about his role in preserving and promoting Carnatic music as a deeply spiritual and rich tradition.</p>
     </section>
 
-    <section class="link-section">
-        <h2>Learn More</h2>
-        <p>Here are some useful resources for further reading:</p>
-        <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Muthuswami_Dikshitar" target="_blank">Sri Muttuswami Dikshitar - Wikipedia</a></li>
-            <li><a href="https://www.bharatadesam.com/people/biographies/poets_composers/muthuswami_dikshitar.php" target="_blank">Sri Muthuswami Dikshitar - Biography</a></li>
-            <li><a href="https://www.medieval.org/music/world/carnatic/dikshitar.html" target="_blank">Sri Muthuswami Dikshitar: Compositions by Raga</a></li>
-            <li><a href="https://www.thanjavurparampara.com/post/2015/03/26/sri-muthuswami-dikshitar" target="_blank">Sri Muthuswami Dikshitar - Thanjavur Parampara</a></li>
-        </ul>
+    <section class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Muthuswami_Dikshitar_Coloured.jpg/800px-Muthuswami_Dikshitar_Coloured.jpg" alt="Shri Muttuswami Dikshitar">
     </section>
 </div>
+
+<section class="link-section">
+    <h2>Learn More</h2>
+    <p>Here are some useful resources for further reading:</p>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Muthuswami_Dikshitar" target="_blank">Muttuswami Dikshitar - Wikipedia</a></li>
+        <li><a href="https://www.bharatadesam.com/people/biographies/poets_composers/muthuswami_dikshitar.php" target="_blank">Muthuswami Dikshitar - Biography</a></li>
+        <li><a href="https://www.medieval.org/music/world/carnatic/dikshitar.html" target="_blank">Muthuswami Dikshitar: Compositions by Raga</a></li>
+        <li><a href="https://www.thanjavurparampara.com/post/2015/03/26/sri-muthuswami-dikshitar" target="_blank">Sri Muthuswami Dikshitar - Thanjavur Parampara</a></li>
+    </ul>
+</section>
+
 
 <script>
     // Simple JavaScript to show a welcome message on page load
